@@ -28,7 +28,7 @@ img {
 }
 
 .bell-container {
-    float: left;
+    float: right;
     padding-right:10px;
     width: 50px;
     height: 30px;
@@ -49,6 +49,11 @@ img {
 }
 
 /* Header profile picture and h1 */
+header {
+    position: fixed;
+    top: 0px;
+}
+
 h1 {
     color: black;
     padding-left: 10px;
@@ -62,6 +67,7 @@ h1 {
 }
 
 header p {
+    float: right;
     color: black;
     padding-right: 10px;
 }
@@ -80,6 +86,7 @@ header p {
 .main-header {
     display: flex;
     justify-content: space-between;
+
 }
 
 .main-header input {
