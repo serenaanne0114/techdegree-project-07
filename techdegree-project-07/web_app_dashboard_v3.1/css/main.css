@@ -49,10 +49,7 @@ img {
 }
 
 /* Header profile picture and h1 */
-header {
-    position: fixed;
-    top: 0px;
-}
+
 
 h1 {
     color: black;
