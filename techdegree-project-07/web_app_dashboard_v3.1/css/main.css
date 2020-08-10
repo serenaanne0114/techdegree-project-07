@@ -10,7 +10,7 @@
 
 h3, h2, h1 {
     margin-left: 15px;
-    color: #708090;
+    color: black;
 }
 
 /*Size and rounded look on pictures */
@@ -28,6 +28,7 @@ img {
 }
 
 .bell {
+    float: right;
     transition: transform 1s;
     padding-right: 10px;
     width: 50px;
@@ -49,8 +50,6 @@ img {
 }
 
 /* Header profile picture and h1 */
-
-
 h1 {
     color: black;
     padding-left: 10px;
@@ -70,13 +69,10 @@ header p {
 }
 
 /* Navigation bar */
-.nav-bar {
-    display: flex;
-    justify-content: space-around;
+.nav-bar img {
     height: 30px;
     width: 30px;
     padding: 10px;
-    margin: 0 auto;
 }
 
 /* Dashboard and search bar */
