@@ -27,14 +27,14 @@ img {
     height: 50px;
 }
 
-.bell-container {
-    float: right;
-    padding-right:10px;
+.bell {
+    transition: transform 1s;
+    padding-right: 10px;
     width: 50px;
     height: 30px;
 }
 
-.bell-container:hover {
+.bell:hover {
     transform: rotate(20deg);
 }
 
