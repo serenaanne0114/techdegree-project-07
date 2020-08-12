@@ -93,6 +93,7 @@ header {
     float: right;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .main-header {
