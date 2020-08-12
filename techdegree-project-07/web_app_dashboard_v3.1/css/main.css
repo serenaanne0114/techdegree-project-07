@@ -363,6 +363,10 @@ a {
 }
 
 /* Recent */
+.new-members,
+.recent-activity {
+    width: 50%;
+}
 
 .recent {
     color: gray;
@@ -400,6 +404,11 @@ a {
 }
 
 /* Message User */
+.message,
+.settings {
+    width: 50%;
+}
+
 .message {
     border-right: 1px solid lightslategray;
 }
