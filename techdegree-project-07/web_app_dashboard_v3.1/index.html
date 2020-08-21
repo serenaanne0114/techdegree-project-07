@@ -10,7 +10,7 @@
     </head>
 
     <body class="grid-container">
-    <header>
+    <header class="header">
         <!-- Header and profile picture-->
         <h1>YourApp&trade;</h1>
         <div class="user">
@@ -28,7 +28,7 @@
                 </svg>
         </div>
         <div class="line"></div>
-            <img class="profile" src="images/member-0.jpeg" alt="profile picture">
+            <img src="images/member-0.jpeg" alt="profile picture">
             <p>Serena Hendrickson</p>
         </div>    
 
@@ -52,14 +52,13 @@
     </nav>
 
     <!--Main container-->
-    <main>
+    <main class="main">
         <div class="main-header">
-            <div class="headline">
+            <h2 class="headline">DASHBOARD</h2>
+            <div class="main-header-search">
                 <input type="search-bar" name="search" placeholder="Search...">
             </div>
-            <!--Dashboard widget-->
-            <h2 class="headline" id="dashboard">DASHBOARD</h2> 
-        </div>
+         </div>
             
             <!--Alert-->
             <div class="alert">
@@ -69,23 +68,23 @@
             <!--Traffic line graph-->
             <section class="traffic">
                 <div class="traffic-header">
-                    <h3 class="traffic-heading">TRAFFIC</h3>
-                        <ul class="traffic-list">
-                            <li class="traffic-link">Hourly</li>
-                            <li class="traffic-link">Daily</li>
-                            <li class="traffic-link-active">Weekly</li>
-                            <li class="traffic-link">Monthly</li>
+                    <h3>TRAFFIC</h3>
+                        <ul class="traffic-nav">
+                            <li class="traffic-nav-link">Hourly</li>
+                            <li class="traffic-nav-link">Daily</li>
+                            <li class="traffic-nav-link active">Weekly</li>
+                            <li class="traffic-nav-link">Monthly</li>
                         </ul>
                 </div>
-                <div class="widget-full-container">
+                <div class="widget-container-full">
                     <canvas id="traffic-chart"></canvas>
                 </div>
             </section>
 
             <!--Daily chart-->
-            <section class="traffic-daily">
+            <section class="daily">
                 <h3>DAILY TRAFFIC</h3>
-                <div class= "widget-half-cntainer">
+                <div class= "widget-container-half">
                     <canvas id="daily-chart"></canvas>
                 </div>
             </section>
@@ -93,12 +92,13 @@
             <!--Mobile users-->
             <section class="mobile">
                 <h3>MOBILE USERS</h3>
-                <div class="widget-half-container">
+                <div class="widget-container-half">
                     <canvas id="mobile-chart"></canvas>
                 </div>
             </section>
 
             <!--Social stats-->
+            <div class="social">
             <h3>SOCIAL STATS</h3>
             <div class="social-container">
                 <!--Twitter-->
@@ -175,41 +175,41 @@
                     </div>
                 </div>
             </div>
+        </div>
            
             <!--New members-->
-            <section class="new-memebers">
+            <section class="memebers">
                 <h3>NEW MEMBERS</h3>
                 <div class="members-container">
-                <div class="first-member">
                     <img src="images/member-1.jpg" alt="member 1">
-                    <div class="staff-members">
+                    <div class="members-text">
                         <p>Victoria Chambers</p>
                         <a href='#'>victoria.chambers80@example.com</a>
                     </div>
                     <p class="date">8/1/20</p>
                 </div>
 
-                <div class="second-member">
+                <div class="members-container">
                     <img src="images/member-2.jpg" alt="member 2">
-                    <div class="staff-members">
+                    <div class="members-text">
                         <p>Dale Byrd</p>
                         <a href='#'>dale.byrd52@example.com</a>
                     </div>
                     <p class="date">8/1/20</p>
                 </div>
 
-                <div class="third-member">
+                <div class="memebers-container">
                     <img src="images/member-3.jpg" alt="member 3">
-                    <div class="staff-members">
+                    <div class="members-text">
                         <p>Dawn Wood</p>
                         <a href='#'>dawn.wood16@example.com</a>
                     </div>
                     <p class="date">8/1/20</p>
                 </div>
 
-                <div class="fourth-member">
+                <div class="members-container">
                     <img src="images/member-4.jpg" alt="member 4">
-                    <div class="staff-member">
+                    <div class="members-text">
                         <p>Dan Oliver</p>
                         <a href='#'>dan.oliver82@example.com</a>
                     </div>
@@ -219,44 +219,43 @@
             </section>
 
             <!--Recent activity-->
-            <section class="recent-activity">
+            <section class="activity">
                 <h3>RECENT ACTIVITY</h3>
 
-                <div class="recent">
-                    <div class="recent-one">
+                <div class="activity-container">
                         <img src="images/member-1.jpg" alt="member 1">
-                        <div class="staff-members">
+                        <div class="activity-text">
                             <p>Victoria Chambers commented on YourApp's SEO Tips</p>
-                            <p>4 hours ago</p>
-                        </div>
+                            <p class="activity-time">4 hours ago</p>
                         <span>&gt</span>
                     </div>
+                    </div>
 
-                    <div class="recent-two">
+                    <div class="activity-container">
                         <img src="images/member-2.jpg" alt="member 2">
-                        <div class="staff-members">
+                        <div class="activity-text">
                             <p>Dale Byrd like the post Facebook changes for 2020</p>
-                            <p>5 hours ago</p>
-                        </div>
+                            <p class="activity-time">5 hours ago</p>
                         <span>&gt</span>
+                        </div>
                     </div>
 
-                    <div class="recent-three">
+                    <div class="activity-container">
                         <img src="images/member-3.jpg" alt="member 3">
-                        <div class="staff-members">
+                        <div class="activity-text">
                             <p>Dawn Wood commented on Facebook changes for 2020</p>
-                            <p>5 hours ago</p>
-                        </div>
+                            <p class="activity-time">5 hours ago</p>
                         <span>&gt</span>
                     </div>
+                    </div>
 
-                    <div class="recent-four">
+                    <div class="activity-container">
                         <img src="images/member-4.jpg" alt="member 4">
-                        <div class="staff-members">
+                        <div class="activity-text">
                             <p>Dan Oliver posted YourApp's SEO Tips</p>
-                            <p>1 day ago</p>
-                        </div>
-                        <span>&gt</span>
+                            <p class="activity-time">1 day ago</p>
+                       <span>&gt</span>
+                    </div>
                     </div>
                 </div>
             </section>
