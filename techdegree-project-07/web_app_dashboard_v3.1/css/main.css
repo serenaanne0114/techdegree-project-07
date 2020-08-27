@@ -309,52 +309,34 @@ main {
     background-color: #fbfbfb;
 }
 
-.facebook-circle,
-.google-circle,
-.twitter-circle {
+.social-image {
+    width: 5em;
+    height: 5em;
     display: flex;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-color: lavenderblush;
-    border-radius: 50%;
-    margin: 10px;
-    padding: 10px;
+    border-radius: 15px;
+    background-color: #7477bf;
 }
 
-.google-svg {
-    padding-top: 15px;
+.social-image svg {
+    width: 50%;
 }
 
-.twitter-svg {
-    padding-top: 15px;
+.social-text p {
+    margin: 0 30px;
 }
 
-.number {
-    font-size: 64px;
-    color: gray;
-    margin-bottom: auto;
-    margin-top: 0;
+.social-text .name {
+    font-size: 20px;
+    font-weight: bold;
+    color:#7477bf;
 }
 
-.social-name {
-    font-size:18px;
-    margin-bottom: auto;
-    color: lightslategray;
-}
-
-.facebook-block,
-.google-block,
-.twitter-block {
-    display: flex;
-    border: 1px solid lightslategray;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    border-radius: 5px;
-    padding: 0 15px;
-    margin: 15px auto;
-    background-color:  #7477bf; 
+.social-text .number {
+    line-height: 45px;
+    font-weight: 100;
+    font-size: 50px;
+    color: #666;
 }
 
 /* New members */
@@ -483,7 +465,6 @@ main {
     color: white;
     font-weight: bold;
     border-radius: 6px;
-    padding: 15px;
 }
 
 /* Switch */
