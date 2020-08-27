@@ -111,6 +111,7 @@ h1 {
 
 /* Navigation bar */
 nav {
+    float: left;
     grid-area: nav;
     background-color: #4d4c72;
     text-align: center;
