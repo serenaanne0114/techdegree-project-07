@@ -483,6 +483,7 @@ main {
     color: white;
     font-weight: bold;
     border-radius: 6px;
+    padding: 15px;
 }
 
 /* Switch */
