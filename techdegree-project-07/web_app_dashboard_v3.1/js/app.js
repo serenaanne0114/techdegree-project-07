@@ -6,18 +6,33 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['16-22', '23-29','30-5','6-12','13-19',
+        '20-26', '27-3', '4-10','11-17', '18-24','25-31'],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            backgroundColor: 'rgba(116, 119, 191, .3)',
+            borderColor: 'rgba(176, 179, 231, 1)',
+            borderWidth: 1.5,
+            pointRadius: 6,
+            pointBackgroundColor: 'rgba(251, 251,251, 1)',
+            pointBorderWidth:'2',
+            pointBorderColor: 'rgba(116, 120, 191, 1)',
+            lineTension: 0,
+            data: [500, 1000, 1500, 2000, 25000]
         }]
     },
 
     // Configuration options go here
     options: {}
 });
+
+//Bar chart
+var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: options
+});
+
+
 
 //Alert Notification
 const alertNotification = document.getElementById('alert');
