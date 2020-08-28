@@ -157,22 +157,36 @@ main {
 }
 
 .main-header-search {
-    width: 60%;
+    width: 65%;
     text-align: right;
     background-color: #fbfbfb;
     border: 1px solid #dfdfdf;
     border-bottom-left-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.main-header-search input {
-    margin-top: 1em;
+.search {
     margin-left: 0.5em;
-    margin-right: 0.5em;
-    border: 1px solid #dfdfdf;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     border-style: none;
-    width: 150px;
     padding: 0.5em;
+    border: 1px solid #dfdfdf;
+    border-right: none;
+    width: 150px;
+}
+
+.search-icon {
+    border: 1px solid #dfdfdf;
+    border-left: none;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    width: 30px;
+    background-color: #fffffe;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 /*headline */
