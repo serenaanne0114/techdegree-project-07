@@ -17,7 +17,7 @@ var chart = new Chart(ctx, {
             pointBorderWidth:'2',
             pointBorderColor: 'rgba(116, 120, 191, 1)',
             lineTension: 0,
-            data: [500, 1000, 1500, 2000, 25000]
+            data: [500, 1000, 1500, 2000, 2500]
         }]
     },
 
