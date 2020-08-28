@@ -121,9 +121,6 @@ h1 {
 }
 
 .nav-bar img {
-    height: 30px;
-    width: 30px;
-    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -495,7 +492,7 @@ main {
         grid-template-columns: 55px 1fr;
         grid-template-areas:
         'header header'
-        'navigation main';
+        'nav main';
     }
 
     .main {
