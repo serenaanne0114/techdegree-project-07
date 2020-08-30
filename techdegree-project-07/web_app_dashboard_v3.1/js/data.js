@@ -33,44 +33,44 @@ var chart = new Chart(ctx, {
     }    
 });
 
-let trafficData1 = [350, 1450, 1000, 1200, 1500, 950, 580, 1050, 1250, 1000, 1500];
+// let trafficData1 = [350, 1450, 1000, 1200, 1500, 950, 580, 1050, 1250, 1000, 1500];
 
-let trafficData2 = [950, 1250, 400, 1500, 1500, 2550, 100, 1350, 2250, 1200, 1500];
+// let trafficData2 = [950, 1250, 400, 1500, 1500, 2550, 100, 1350, 2250, 1200, 1500];
 
-let trafficData3 = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500];
+// let trafficData3 = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500];
 
-let trafficData4 = [750, 1750, 1500, 1800, 1500, 2050, 840, 1350, 950, 700, 1500];
+// let trafficData4 = [750, 1750, 1500, 1800, 1500, 2050, 840, 1350, 950, 700, 1500];
 
-const trafficNav = document.querySelector('.traffic-nav');
-const trafficAll = document.querySelector('.traffic-nav-link');
+// const trafficNav = document.querySelector('.traffic-nav');
+// const trafficAll = document.querySelector('.traffic-nav-link');
 
-trafficNav.addEventListener('click', e => {
-    const navSelected = e.target;
+// trafficNav.addEventListener('click', e => {
+//     const navSelected = e.target;
 
-    if (navSelected.tagName === 'LI') {
-        trafficAll.forEach(element =>{
-            element.classList.remove('active');
-        });
-        navSelected.classList += 'active';
-    }
+//     if (navSelected.tagName === 'LI') {
+//         trafficAll.forEach(element =>{
+//             element.classList.remove('active');
+//         });
+//         navSelected.classList += 'active';
+//     }
 
-    if (navSelected.innerText === 'Hourly') {
-        trafficChart.data.datasets[0].data = trafficData1;
-        trafficChart.update();
-    }
-     else if (navSelected.innerText === 'Daily') {
-        trafficChart.data.datasets[0].data = trafficData2;
-        trafficChart.update();
-    }
-     else if (navSelected.innerText === 'Weekly') {
-        trafficChart.data.datasets[0].data = trafficData3;
-        trafficChart.update();
-    }
-     else if (navSelected.innerText === 'Monthly') {
-        trafficChart.data.datasets[0].data = trafficData4;
-        trafficChart.update();
-    }
-});
+//     if (navSelected.innerText === 'Hourly') {
+//         trafficChart.data.datasets[0].data = trafficData1;
+//         trafficChart.update();
+//     }
+//      else if (navSelected.innerText === 'Daily') {
+//         trafficChart.data.datasets[0].data = trafficData2;
+//         trafficChart.update();
+//     }
+//      else if (navSelected.innerText === 'Weekly') {
+//         trafficChart.data.datasets[0].data = trafficData3;
+//         trafficChart.update();
+//     }
+//      else if (navSelected.innerText === 'Monthly') {
+//         trafficChart.data.datasets[0].data = trafficData4;
+//         trafficChart.update();
+//     }
+// });
 
 //Bar chart
 var myBarChart = new Chart(ctx, {
