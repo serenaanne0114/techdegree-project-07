@@ -121,7 +121,7 @@ var myDoughnutChart = new Chart(ctx, {
          position: {
              'right'
          }
-     }
+     },
     datasets: [{
         data: [10, 20, 30]
     }],
