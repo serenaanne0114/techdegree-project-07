@@ -632,13 +632,15 @@ main {
     }
 
     /*Social Stats*/
-
+/* 
     .social-group {
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     .social-container {
+        display: flex;
+        justify-content: space-between;
         width: 30%;
         padding: 10px;
     }
