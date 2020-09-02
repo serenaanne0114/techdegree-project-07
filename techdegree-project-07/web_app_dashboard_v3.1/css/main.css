@@ -632,11 +632,11 @@ main {
     }
 
     /*Social Stats*/
-/* 
+
     .social-group {
         display: flex;
         justify-content: space-between;
-    } */
+    } 
 
     .social-container {
         display: flex;
@@ -650,11 +650,11 @@ main {
         margin-left: 15px;
     }
 
-    .social-text .social-name {
+    .social-text .name {
         font-size: 16px;
     }
 
-    .social-text .social-number {
+    .social-text .number {
         font-size: 40px;
     }
 
