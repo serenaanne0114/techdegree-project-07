@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width" initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web App Dashboard</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -16,8 +16,6 @@
             <h1>YourApp&trade;</h1>
             <div class="user">
             <div class="bell-border">
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg class="bell" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                     <style type="text/css">
@@ -85,7 +83,7 @@
             <section class="daily">
                 <h3>DAILY TRAFFIC</h3>
                 <div class="chart-one">
-                    <canvas id="myChart"></canvas>
+                    <canvas id="dailyTrafficChart"></canvas>
                 </div>
             </section>
 
@@ -93,7 +91,7 @@
             <section class="mobile">
                 <h3>MOBILE USERS</h3>
                 <div class="chart-two">
-                    <canvas id="myChart"></canvas>
+                    <canvas id="mobileUserChart"></canvas>
                 </div>
             </section>
         </div>
@@ -105,7 +103,7 @@
                 <div class="social-container">
                     <div class="social-image">
                             <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                            <svg class="twitter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg class="twitter" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
     
                                     <path fill="white" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
@@ -126,7 +124,7 @@
                 <div class="social-container">
                     <div class= "social-group">
                     <div class="social-image">
-                            <svg class="facebook" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg class="facebook" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_3" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path fill="white" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/>
                             </svg>
                         </div>
@@ -141,7 +139,7 @@
                 <div class="social-container">
                     <div class="social-image">
                                 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <svg class="google" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <svg class="google" version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                                      <path fill="white" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
                                     c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
@@ -248,7 +246,6 @@
                             <p class="activity-time">1 day ago</p>
                        <span>&gt;</span>
                     </div>
-                    </div>
                 </div>
             </section>
             
@@ -288,7 +285,7 @@
                                 Set Profile To Public
                             </strong>
 
-                            <span id="switch-main">
+                            <span id="main-switch">
                                 <span>ON</span>
                                 <span>OFF</span>
                                 <a></a>
@@ -298,7 +295,7 @@
 
                     <!--Timezone-->
                     <select class="form-field" id="timezone">
-                        <option disabled-selected>Select A Timezone</option>
+                        <option selected>Select A Timezone</option>
                         <option>EDT: Eastern Standard Time</option>
                         <option>CDT: Central Daylight Time</option>
                         <option>MDT: Mountain Daylight Time</option>
@@ -315,9 +312,9 @@
             
     </section>
     </main>
-</div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+</div>    
 </body>
 </html>
