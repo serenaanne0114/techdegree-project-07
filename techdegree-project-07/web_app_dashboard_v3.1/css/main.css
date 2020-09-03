@@ -17,7 +17,6 @@
     'header',
     'nav',
     'main';
-
 }
 
 .widget-full-container {
@@ -146,8 +145,7 @@ h1 {
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
+    grid-gap: 2px;
 }
 
 
@@ -232,16 +230,24 @@ main {
     opacity: 0.5;
 }
 
-/* traffic ans such */
+/* traffic and such */
 .settings,
 .message,
-.recent-activity,
+.activity,
 .members,
 .social,
-.mobile, 
-.daily {
+.widget-container-half {
+    display: grid;
+    grid-gap: 2px;
     border-top: 1px solid #d8d8d8;
     padding: 15px;
+}
+
+.widget-container-half,
+.members,
+.message,
+.settings {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 /* Traffic */
@@ -293,8 +299,7 @@ main {
 .activity h3,
 .members h3
 .social h3,
-.mobile h3,
-.daily h3 {
+.widget-container-half h3 {
     color: #8f8f8f;
     font-weight: 900;
 }
@@ -517,10 +522,12 @@ main {
     }
 
     .main {
-        grid-template-columns: 1fr 1fr;
+        grid-area: 'main';
+        display: grid;
+        grid-gap: 2px;
     }
 
-    .sicial,
+    .social,
     .traffic,
     .alert,
     .main-header {
@@ -628,8 +635,7 @@ main {
     }
 
     .traffic-header h3,
-    .daily h3,
-    .mobile h3,
+    .widget-container-half h3,
     .social h3,
     .members h3,
     .activity h3,
@@ -694,7 +700,15 @@ main {
     .grid-container {
         grid-template-columns: 60px 1fr;
         grid-template-rows: 60px 1fr;
+        grid-template-areas: 
+        'header, header'
+        'nav, main';
     }
+    
+    .header {
+        width: 100vw;
+    }
+
     .widget-container-full {
         width: 93vw;
         margin: 0 auto;
@@ -712,6 +726,10 @@ main {
 
     .traffic-nav {
         padding-right: 15px;
+    }
+
+    .social {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
