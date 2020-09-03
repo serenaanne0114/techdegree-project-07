@@ -75,19 +75,13 @@ var chart = new Chart(ctx, {
 //Bar chart
 var myBarChart = new Chart(ctx, {
     type: 'bar',
-    data: data,
-    options: options
+    labels: ['S', 'M', 'T', 'W', 'T', 'F','S'],
+    datasets: [{
+    data: [10, 20, 30, 40, 50, 60, 70],
+    backgroundColor: '#7477BF',
+    borderWidth: 1 }]
 });
 
- let dailyData = {
-    labels: ['S','M', 'T', 'W', 'T', 'F', 'S'],
-    datasets: [{
-        label: '# of Hits',
-        data: [10, 20, 30, 40, 50, 60, 70],
-        backgroundColor: '#7477BF',
-        borderWidth: 1
-    }]
-};
 
 let dailyOptions = {
     scales:{
@@ -118,10 +112,8 @@ var myDoughnutChart = new Chart(ctx, {
 
  let mobileData = {
      legend: {
-         position: {
-             'right'
-         }
-     },
+         position: 'right',
+         },
     datasets: [{
         data: [10, 20, 30]
     }],
