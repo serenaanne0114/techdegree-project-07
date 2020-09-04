@@ -13,10 +13,6 @@
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 50px 1fr;
-    grid-template-areas:
-    'header',
-    'nav',
-    'main';
 }
 
 .widget-full-container {
@@ -441,7 +437,6 @@ main {
     font-weight: bold;
     color: black;
     background: #fbfbfb;
-    background-color: 1px solid #dfdfdf;
 }
 
 .botton-primary-send {
@@ -522,7 +517,7 @@ main {
     }
 
     .main {
-        grid-area: 'main';
+        grid-area: main;
         display: grid;
         grid-gap: 2px;
     }
