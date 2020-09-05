@@ -13,6 +13,10 @@
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 50px 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main";
 }
 
 .widget-full-container {
@@ -66,7 +70,7 @@ img {
 /* Header and main-header */
 .header {
     grid-area: header;
-    display: grid;
+    display: flex;
     align-items: center;
     color: white;
     background-color: #7477bf;
@@ -693,8 +697,8 @@ main {
         grid-template-columns: 60px 1fr;
         grid-template-rows: 60px 1fr;
         grid-template-areas: 
-        'header, header'
-        'nav, main';
+        'header header'
+        'nav main';
     }
     
     .header {
