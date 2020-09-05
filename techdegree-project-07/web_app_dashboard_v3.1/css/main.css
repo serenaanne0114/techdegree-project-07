@@ -145,11 +145,8 @@ main {
 /*  Main-header */
 .main-header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-left: 15px;
-    width: 20%;
-    margin-bottom: 3%;
 }
 
 .main-header-search {
