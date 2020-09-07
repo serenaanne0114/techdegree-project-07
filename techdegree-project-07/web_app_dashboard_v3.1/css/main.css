@@ -671,7 +671,7 @@ svg {
 
     /*Social Stats*/
 
-    .social-group {
+    /* .social-group {
         display: flex;
         justify-content: space-between;
     } 
@@ -698,6 +698,29 @@ svg {
 
     .activity-text {
         font-size: 0.7em;
+    } */
+
+    .social-number {
+        font-size: 2em;
+    }
+
+    .social-name,
+    .social-number {
+        text-align: left;
+        padding-left: 90px;
+        margin-right: 1rem;
+    }
+
+    .social {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .twitter,
+    .facebook,
+    .google {
+        flex-grow: 1;
     }
 
     /*Settings*/
