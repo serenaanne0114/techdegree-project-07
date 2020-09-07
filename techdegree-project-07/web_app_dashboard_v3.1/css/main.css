@@ -6,6 +6,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .grid-container {
@@ -25,6 +27,9 @@
 
 .widget-half-container {
     width: 90vw;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
 }
 
 /*Size and rounded look on pictures */
@@ -301,21 +306,10 @@ main {
     font-weight: 900;
 }
 
-/* Daily traffic */
-.daily {
-    padding-bottom: 15px;
-    border-bottom: 1px solid lightslategray;
-    border-right: 1px solid lightslategray;
-}
 
-/* Mobile users */
-.mobile {
-    padding-bottom: 15px;
-    border-bottom: 1px solid lightslategray;
-}
 
 /* Social */
-.social-container {
+/* .social-container {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -346,13 +340,48 @@ main {
     font-size: 20px;
     font-weight: bold;
     color:#7477bf;
-}
-
+} */
+/* 
 .social-text .number {
     line-height: 45px;
     font-weight: 100;
     font-size: 50px;
     color: #666;
+} */
+
+.social {
+    display: block;
+}
+
+svg {
+    overflow: visible;
+    fill: white;
+    background-color: #7377bf;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    float: left;
+}
+
+.twitter,
+.facebook,
+.google {
+    border: lightgray solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.social-name {
+    color: #7377bf;
+    font-size: 2em;
+    margin: 0;
+}
+
+.social-number {
+    font-size: 2em;
+    margin: 0;
 }
 
 /* New members */
@@ -495,7 +524,7 @@ main {
     color: #8f8f8f;
 }
 
-#switch-main {
+.switch-main {
     width: 25%;
     margin-left: 2em;
     border-radius: 15px;
@@ -509,11 +538,11 @@ main {
         display: grid;
         height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 50px 1fr;
+        grid-template-rows: 70px 60px 1fr;
         grid-template-areas: 
-        'header'
-        'nav'
-        'main'
+        "header"
+        "nav"
+        "main"
         ;
     }
 
@@ -697,8 +726,8 @@ main {
         grid-template-columns: 60px 1fr;
         grid-template-rows: 60px 1fr;
         grid-template-areas: 
-        'header header'
-        'nav main';
+        "header header"
+        "nav main";
     }
     
     .header {
