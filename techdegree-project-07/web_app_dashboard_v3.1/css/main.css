@@ -309,7 +309,7 @@ main {
 
 
 /* Social */
-/* .social-container {
+.social-container {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -319,39 +319,36 @@ main {
     background-color: #fbfbfb;
 }
 
-.social-image {
+/* .social-image {
     width: 5em;
     height: 5em;
     display: flex;
     justify-content: center;
     border-radius: 15px;
     background-color: #7477bf;
-}
+} */
 
-.social-image svg {
+/* .social-image svg {
     width: 50%;
-}
+} */
 
 .social-text p {
     margin: 0 30px;
 }
 
-.social-text .name {
+.social-name {
     font-size: 20px;
     font-weight: bold;
     color:#7477bf;
 } */
-/* 
-.social-text .number {
+ 
+.social-number {
     line-height: 45px;
     font-weight: 100;
     font-size: 50px;
     color: #666;
-} */
+} 
 
-.social {
-    display: block;
-}
 
 svg {
     overflow: visible;
@@ -361,9 +358,9 @@ svg {
     padding: 15px;
     border-radius: 50%;
     float: left;
-}
+} 
 
-.twitter,
+ .twitter,
 .facebook,
 .google {
     border: lightgray solid 1px;
@@ -371,9 +368,9 @@ svg {
     padding: 10px;
     margin: 10px;
     text-align: center;
-}
+} 
 
-.social-name {
+/* .social-name {
     color: #7377bf;
     font-size: 2em;
     margin: 0;
@@ -382,10 +379,10 @@ svg {
 .social-number {
     font-size: 2em;
     margin: 0;
-}
+} */ 
 
 /* New members */
-.members-container {
+ .members-container {
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
@@ -425,7 +422,7 @@ svg {
 .date {
     text-align: right;
     flex-grow: 1;
-}
+} 
 
 /* Recent activity */
 .activity-container {
