@@ -49,7 +49,6 @@ img {
 /* Bell */
 
 .bell {
-    
     transition: transform 1s;
     padding-right: 10px;
     width: 50px;
