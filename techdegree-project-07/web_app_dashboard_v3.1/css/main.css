@@ -399,11 +399,9 @@ svg {
     border-radius: 25px;
 }
 
-.members {
-    color: gray;
-    border-right: 1px solid lightslategray;
-    border-bottom: 1px solid lightslategray;
-    border-top:1px solid lightslategray;
+.members-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .members-text,
