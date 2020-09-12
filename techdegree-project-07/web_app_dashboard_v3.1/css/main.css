@@ -381,8 +381,9 @@ svg {
     margin: 0;
 } */ 
 
-/* New members */
- .members-container {
+/* Members and activity */
+ .members-container,
+ .activity-container {
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
@@ -399,13 +400,10 @@ svg {
     border-radius: 25px;
 }
 
-.members-text {
-    display: flex;
-    flex-direction: column;
-}
-
 .members-text,
 .activity-text {
+    display: flex;
+    flex-direction: column;
     line-height: 0px;
     font-size: 0.9em;
     margin-left: 10px;
@@ -422,21 +420,8 @@ svg {
     flex-grow: 1;
 } 
 
-/* Recent activity */
-.activity-container {
-    display: flex;
-    color: #666;
-    justify-content: flex-start;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e9e9e9;
-}
 .activity-time {
     font-size: 13px;
-}
-
-.activity-text {
-    font-size: 12px;
 }
 
 .activity-text span {
