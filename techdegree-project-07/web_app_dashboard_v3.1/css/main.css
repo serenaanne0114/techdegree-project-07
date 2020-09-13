@@ -450,14 +450,14 @@ svg {
     background: #fbfbfb;
 }
 
-.botton-primary-send {
+/* .botton-primary-send {
     font-weight: bold;
     color: white;
     background: #7377bf;
     border-radius: 6px;
     border-style: none;
     padding: 15px;
-}
+} */
 
 /* Settings */
 .form-field {
@@ -474,7 +474,7 @@ svg {
     justify-content: space-between;
 }
 
-.button-primary-save {
+/* .button-primary-save {
     width: 45%;
     background: #7377bf;
     color: white;
@@ -490,6 +490,36 @@ svg {
     color: white;
     font-weight: bold;
     border-radius: 6px;
+} */
+
+/* Button */
+#send {
+    margin-left: 15px;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+#send,
+#save,
+#cancel {
+    height: 2em;
+    border-radius: 10px;
+    border: none;
+    background-color: #7377bf;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 5px 3px 0 lightgray;
+}
+
+#save, 
+#cancel {
+    margin: 10px 15px 40px 15px;
+    width: 42%;
+}
+
+#cancel {
+    background-color: gray;
+    margin-left: 0;
 }
 
 /* Switch */
@@ -502,7 +532,7 @@ svg {
 .switch strong {
     width: 40%;
     margin: auto 0;
-    color: #8f8f8f;
+    color: #7477bf;
 }
 
 .switch-main {
@@ -510,7 +540,7 @@ svg {
     margin-left: 2em;
     border-radius: 15px;
     border: 3px solid #cbcbce;
-    background: #7477bf;
+    background: #8f8f8f;
 }
 
 /* Media query */
