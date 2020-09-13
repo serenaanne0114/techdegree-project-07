@@ -297,16 +297,7 @@ main {
     background-color: #81c98f;
 }
 
-/* Traffic bar */
-.settings h3,
-.message h3,
-.activity h3,
-.members h3
-.social h3,
-.widget-container-half h3 {
-    color: #8f8f8f;
-    font-weight: 900;
-}
+
 
 
 
@@ -671,6 +662,8 @@ svg {
     .message h3,
     .settings h3 {
         font-size: 14px;
+        color: #8f8f8f;
+        font-weight: 900;
     }
 
     /*Social Stats*/
