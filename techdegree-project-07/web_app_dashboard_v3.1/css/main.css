@@ -95,14 +95,14 @@ img {
 }
 
 h1 {
-    color: black;
+    color: white;
     padding-left: 10px;
     margin-right: auto;
 }
 
 .header p {
     float: right;
-    color: black;
+    color: white;
     padding-right: 10px;
 }
 
