@@ -165,6 +165,7 @@
                         <p class="date">8/1/20</p>
                     </div>
                  </div>
+                 <hr>
 
                 <div class="members-container">
                     <img src="images/member-2.jpg" alt="Dale Byrd" class="profile-image">
@@ -174,6 +175,7 @@
                         <p class="date">8/1/20</p>
                     </div>
                     </div>
+                    <hr>
 
                 <div class="members-container">
                     <img src="images/member-3.jpg" alt="Dawn Wood" class="profile-image">
@@ -183,6 +185,7 @@
                         <p class="date">8/1/20</p>
                     </div>
                 </div>
+                <hr>
 
                 <div class="members-container">
                     <img src="images/member-4.jpg" alt="Dan Oliver">
@@ -206,6 +209,7 @@
                         <span>&gt;</span>
                     </div>
                     </div>
+                    <hr>
 
                     <div class="activity-container">
                         <img src="images/member-2.jpg" alt="Dale Byrd">
@@ -215,6 +219,7 @@
                         <span>&gt;</span>
                         </div>
                     </div>
+                    <hr>
 
                     <div class="activity-container">
                         <img src="images/member-3.jpg" alt="Dawn Wood">
@@ -224,6 +229,7 @@
                         <span>&gt;</span>
                     </div>
                     </div>
+                    <hr>
 
                     <div class="activity-container">
                         <img src="images/member-4.jpg" alt="Dan Oliver">
@@ -248,36 +254,40 @@
             <!--Setting-->
             <section class="settings">
                 <h3>SETTINGS</h3>
-
+                    <span id="savings-message"></span>
                     <!--Switches-->
-                        <label class="switch-light switch-candy switch-ios" onclick="">
-                            <input type="checkbox" id="settingEmail" />
-
+                     <div class="toggle">  
                             <strong>
                                 Send Email Notifications
                             </strong>
-
+                     <div class="onoffswitch">
+                        <label class="switch-light switch-candy switch-ios" onclick="">
+                            <input type="checkbox" id="settingEmail" />
                             <span class="switch-main">
-                                <span>ON</span>
-                                <span>OFF</span>
+                                <span class="onoffswitch-inner">ON</span>
+                                <span class="onoffswitch-switch">OFF</span>
                                 <a></a>
                             </span>
                         </label>
+                    </div>
+                    </div>
 
-                        <label class="switch-light switch-candy switch-ios" onclick="">
-                            <input type="checkbox">
 
-                            <strong>
+                    <div class="toggle">
+                           <strong>
                                 Set Profile To Public
                             </strong>
-
+                            <div class="onoffswitch">
+                            <label class="switch-light switch-candy switch-ios" onclick="">
+                                <input type="checkbox">
                             <span class="switch-main">
-                                <span>ON</span>
-                                <span>OFF</span>
+                                <span class="onoffswitch-inner">ON</span>
+                                <span class="onoffswitch-switch">OFF</span>
                                 <a></a>
                             </span>
                         </label>
-                    
+                    </div>
+                </div>
 
                     <!--Timezone-->
                     <select class="form-field" id="timezone">

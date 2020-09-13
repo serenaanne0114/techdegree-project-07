@@ -514,6 +514,16 @@ svg {
 }
 
 /* Switch */
+.toggle {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.toggle p {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
 .switch {
     margin: 30px 0;
     display: flex;
@@ -532,6 +542,11 @@ svg {
     border-radius: 15px;
     border: 3px solid #cbcbce;
     background: #8f8f8f;
+}
+
+.onoffswitch {
+    margin-top: 10px;
+    float: right;
 }
 
 /* Media query */
