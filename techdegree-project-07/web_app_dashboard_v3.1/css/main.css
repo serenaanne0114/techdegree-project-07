@@ -419,6 +419,7 @@ svg {
 } 
 
 .activity-time {
+    text-align: right;
     font-size: 13px;
 }
 
