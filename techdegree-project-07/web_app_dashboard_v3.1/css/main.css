@@ -144,6 +144,11 @@ h1 {
     margin-bottom: 10px;
 }
 
+.green-light {
+    border-left: 5px;
+    color: green;
+}
+
 /*Main */
 main {
     grid-area: main;
