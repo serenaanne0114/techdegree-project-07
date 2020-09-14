@@ -419,11 +419,11 @@ svg {
 } 
 
 .activity-time {
-    text-align: right;
     font-size: 13px;
 }
 
 .activity-text span {
+    text-align: right;
     font-weight: 600;
 }
 
