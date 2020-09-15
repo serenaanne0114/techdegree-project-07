@@ -424,6 +424,8 @@ svg {
 
 .activity-text span {
     font-weight: 600;
+    text-align: right;
+    flex-grow: 1;
 }
 
 /* Message User */
