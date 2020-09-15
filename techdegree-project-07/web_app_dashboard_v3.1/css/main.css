@@ -422,7 +422,7 @@ svg {
     font-size: 13px;
 }
 
-.activity-text span {
+.activity-container span {
     font-weight: 600;
     text-align: right;
     flex-grow: 1;
