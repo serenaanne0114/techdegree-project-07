@@ -145,7 +145,7 @@ h1 {
 }
 
 .green-light {
-    border: 2px solid #81c98f;
+    border-left: 2px solid #81c98f;
 }
 
 /*Main */
