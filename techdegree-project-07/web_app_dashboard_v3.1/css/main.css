@@ -610,7 +610,7 @@ svg {
 
     .nav {
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
     }
 
@@ -778,6 +778,12 @@ svg {
     .widget-container-full {
         width: 93vw;
         margin: 0 auto;
+    }
+
+    .nav {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     /*Social stats*/
