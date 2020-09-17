@@ -27,10 +27,14 @@
 
 .widget-half-container {
     width: 90vw;
-    transform:translateX(-50%);
     padding-bottom: 15px;
     border-bottom: 1px solid lightslategray;
     border-right: 1px solid lightslategray;
+}
+
+.chart-two,
+.chart-three {
+    transform: translateX(-50%);
 }
 
 /*Size and rounded look on pictures */
