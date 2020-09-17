@@ -83,7 +83,7 @@ var chart3 = new Chart(mobile, {
             label: '# of Users',
             data: [550, 500, 2000],
             borderWidth: 0,
-            backgroundColor: ["#78CF82", "#51B6C8","7477BF"],
+            backgroundColor: ["#7477BF", "#51B6C8","7477BF"],
         }]
     },
 
