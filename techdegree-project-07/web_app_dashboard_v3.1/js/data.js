@@ -52,7 +52,7 @@ var chart2 = new Chart(daily, {
              barThickness: 25,   
              maxBarThickness: 30,
             minBarLength: 2,
-            data: [10, 20, 30, 40, 50, 60, 70],
+            data: [50, 100, 250, 125, 235, 200, 100],
              backgroundColor: '#7477BF',
             borderWidth: 1
         }]
