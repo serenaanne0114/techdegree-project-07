@@ -32,10 +32,7 @@
     border-right: 1px solid lightslategray;
 }
 
-.chart-two,
-.chart-three {
-    transform: translateX(-50%);
-}
+
 
 /*Size and rounded look on pictures */
 .members img,
