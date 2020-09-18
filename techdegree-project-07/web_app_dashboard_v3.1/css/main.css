@@ -21,6 +21,10 @@
     "main";
 }
 
+canvas {
+    max-width: 100%;
+}
+
 .widget-full-container {
     width: 92vw;
 }
@@ -559,18 +563,61 @@ svg {
 
 /* Media query */
 @media (min-width: 768px) {
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .social h3 {
+        width: 100%;
+      }
+      .social div {
+        flex-basis: 30%;
+      }
+}
+
+@media (min-width: 1024px) {
     .grid-container {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px 60px 1fr;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: 60px 1fr;
         grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        ;
+        "header header"
+        "nav main";
+    }
+    
+    .header {
+        width: 100vw;
     }
 
+    .widget-container-full {
+        width: 93vw;
+        margin: 0 auto;
+    }
+
+    .nav {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /*Social stats*/
+    .activity-text,
+    .members-text {
+        font-size: 0.9em;
+    }
+
+    .main-header-search {
+        width: 85%;
+    }
+
+    .traffic-nav {
+        padding-right: 15px;
+    }
+
+    .social {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
     .main {
         grid-area: main;
         display: grid;
@@ -600,9 +647,9 @@ svg {
         grid-column: 1 / span 2;
     }
 
-    .widget-container-full {
+    /* .widget-container-full {
         width: 89vw;
-    }
+    } */
 
     .widget-container-half {
         width: 40vw;
@@ -761,49 +808,6 @@ svg {
     /*General*/
     .active {
         padding: 5px 10px !important;
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: 60px 1fr;
-        grid-template-rows: 60px 1fr;
-        grid-template-areas: 
-        "header header"
-        "nav main";
-    }
-    
-    .header {
-        width: 100vw;
-    }
-
-    .widget-container-full {
-        width: 93vw;
-        margin: 0 auto;
-    }
-
-    .nav {
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    /*Social stats*/
-    .activity-text,
-    .members-text {
-        font-size: 0.9em;
-    }
-
-    .main-header-search {
-        width: 85%;
-    }
-
-    .traffic-nav {
-        padding-right: 15px;
-    }
-
-    .social {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
 
