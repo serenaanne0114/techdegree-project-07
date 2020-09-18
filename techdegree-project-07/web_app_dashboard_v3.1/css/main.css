@@ -250,8 +250,7 @@ main {
 .message,
 .activity,
 .members,
-.social,
-.widget-container-half {
+.social {
     display: grid;
     grid-gap: 2px;
     border-top: 1px solid #d8d8d8;
@@ -308,9 +307,11 @@ main {
     background-color: #81c98f;
 }
 
-
-
-
+/* Daily and mobile chart */
+.chart-two,
+.chart-three {
+    padding: 15px;
+}
 
 /* Social */
 .social-container {
@@ -585,7 +586,7 @@ svg {
     }
     
     .header {
-        width: 100vw;
+        width: 100%;
     }
 
     .widget-container-full {
@@ -608,7 +609,7 @@ svg {
     .main {
         grid-area: main;
         display: grid;
-        grid-gap: 2px;
+        grid-gap: 0;
     }
 
     .social,
@@ -639,7 +640,7 @@ svg {
     } */
 
     .widget-container-half {
-        width: 40vw;
+        width: 50vw;
     }
 
     /*Navigation*/
