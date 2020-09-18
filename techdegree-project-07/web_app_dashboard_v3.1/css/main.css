@@ -223,12 +223,6 @@ main {
     margin-top: 20px;
 }
 
-.alert p {
-    display: inline-block;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
 #closeAlert {
     float: right;
     margin: 0;
@@ -254,13 +248,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.closing {
-    cursor: pointer;
-    font-size: 2em;
-    margin-left: auto;
-}
 
 /* traffic and such */
 .settings,
