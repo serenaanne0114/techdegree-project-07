@@ -32,7 +32,17 @@ var chart1 = new Chart(traffic, {
                     beginAtZero: true
                 }
             }]
-        }
+        },
+        _responsive: {
+            responsive: true,
+            maintainAspectRatio: true
+        },
+        get responsive() {
+            return this._responsive;
+        },
+        set responsive(value) {
+            this._responsive = value;
+        },
     }    
 });
 
@@ -66,7 +76,17 @@ var chart2 = new Chart(daily, {
                     beginAtZero: true
                 }
             }]
-        }
+        },
+        _responsive: {
+            responsive: true,
+            maintainAspectRatio: true
+        },
+        get responsive() {
+            return this._responsive;
+        },
+        set responsive(value) {
+            this._responsive = value;
+        },
     }    
 });
 
@@ -95,6 +115,16 @@ var chart3 = new Chart(mobile, {
                 boxWidth: 20,
                 fontStyle: "bold"
             }
-    } 
+    },
+    _responsive: {
+        responsive: true,
+        maintainAspectRatio: true
+    },
+    get responsive() {
+        return this._responsive;
+    },
+    set responsive(value) {
+        this._responsive = value;
+    },
 },   
 });
