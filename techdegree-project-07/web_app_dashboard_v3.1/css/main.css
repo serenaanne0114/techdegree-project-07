@@ -245,6 +245,23 @@ main {
     opacity: 0.5;
 }
 
+.alert span {
+    font-weight: 700;
+    margin-right: 0;
+}
+
+.alert-messsage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closing {
+    cursor: pointer;
+    font-size: 2em;
+    margin-left: auto;
+}
+
 /* traffic and such */
 .settings,
 .message,
