@@ -19,9 +19,9 @@ send.addEventListener("click", (e) =>{
     if(user.value === "" && message.value === "") {
         alert("Please fill out user and message field before sending");
     } else if(user.value === ""){
-        alert("Please fill out user and message field before sending ");
+        alert("Please fill out user field before sending");
     } else if (message.value === "") {
-        alert("Please fill out user and message field before sending");
+        alert("Please fill out message field before sending");
     } else {
         alert(`Message successfully sent to: ${user.value}`);
     }
