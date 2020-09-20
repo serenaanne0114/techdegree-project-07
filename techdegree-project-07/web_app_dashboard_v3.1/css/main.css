@@ -93,6 +93,10 @@ img {
 
 }
 
+.header h1 {
+    font-size: 1em;
+}
+
 .header span {
     font-weight: 900;
 }
@@ -291,10 +295,10 @@ main {
 }
 
 .traffic-header {
-    /* display: flex; */
-    /* justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    /* padding: 15px; */
+    padding: 15px;
 }
 
 .traffic-header h3 {
