@@ -291,10 +291,10 @@ main {
 }
 
 .traffic-header {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     flex-direction: column;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .traffic-header h3 {
