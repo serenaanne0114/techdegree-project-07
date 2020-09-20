@@ -10,6 +10,7 @@
     padding: 0;
     /* width: 100vw;
     overflow-x: hidden; */
+
 }
 
 .grid-container {
@@ -240,7 +241,7 @@ main {
 }
 
 .close {
-    font-size: 2em;
+    font-size: 1em;
     margin-left: auto;
     cursor: pointer;
 }
@@ -276,12 +277,12 @@ main {
     padding: 15px;
 }
 
-.widget-container-half,
+/* .widget-container-half,
 .members,
 .message,
 .settings {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
+} */
 
 /* Traffic */
 .traffic {
@@ -292,6 +293,7 @@ main {
 .traffic-header {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     padding: 15px;
 }
 
@@ -619,6 +621,10 @@ svg {
         width: 100%;
     }
 
+    .header h1 {
+        font-size: 1em;
+    }
+
     .widget-container-full {
         width: 93vw;
         margin: 0 auto;
@@ -670,7 +676,7 @@ svg {
     } */
 
     .widget-container-half {
-        width: 50vw;
+        width: 45vw;
     }
 
     /*Navigation*/
