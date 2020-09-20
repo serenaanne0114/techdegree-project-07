@@ -15,7 +15,8 @@
 .grid-container {
     display: grid;
     height: 100%;
-    grid-template-columns: 1fr;
+    /* grid-template-columns:  repeat(10px, 1fr); */
+    grid-template-columns: repeat(10px, autofill);
     grid-template-rows: 60px 50px 1fr;
     grid-template-areas: 
     "header"
